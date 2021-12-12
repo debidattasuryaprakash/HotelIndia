@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #7FB4DB;
+    font-size: 25px;
+    text-decoration: none;
+    display:inline-block;
+    padding:40px;
+}
+.nav a:hover{
+    color: #053559;;
+}
+
+/* search button */
+
+.topnav {
+  text-align: center;
+}
+
+.topnav .search-container {
+  padding-bottom: 10px;
+}
+
+.topnav input{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  width: 846px;
+  height: 50px;
+  padding-left: 100px;
+  margin-top: 8px;
+  margin-bottom:40px;
+  font-size: 17px;
+  border: black;
+  box-shadow: 10px 9px 34px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+}
+
+.topnav .search-container button {
+  padding: 10px;
+  float: center;
+  padding: 25px 25px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #fff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 10px 9px 34px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+/* end */
+
+.carousel {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+.slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+.slides::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slides-item {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 100px;
+    height: 100%;
+    justify-content: center;
+    margin: 0 1rem;
+    position: relative;
+    scroll-snap-align: start;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform .5s;
+    width: 100%;
+  }
+  
+  .carousel__nav {
+    padding: 1.25rem .5rem;
+  }
+  
+  .slider-nav {
+    align-items: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    color: #000;
+    display: inline-flex;
+    height: 1.5rem;
+    justify-content: center;
+    padding: .5rem;
+    position: relative;
+    text-decoration: none;
+    width: 1.5rem;
+  }
+  
+  .slider-nav:hover,
+  .slider-nav:active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* .slide-1 {
+    background-color: #fdc;
+  }
+  
+  .slide-2 {
+    background-color: #bfd;
+  }
+  
+  .slide-3 {
+    background-color: #cdf;
+  }
+  
+  .slide-4 {
+    background-color: #dca;
+  }
+  
+  .slide-5 {
+    background-color: #ffc;
+  } */
+  
+  .carousel__skip-link {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+  }
+  
+  .carousel__skip-link:focus {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    font-size: 30px;
+    height: 680px;
+    justify-content: center;
+    opacity: .8;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* about section */
+  .about .title {
+    font-family: Montserrat, sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    color: #255493;
+    font-size: 74px;
+    text-decoration: none;
+    display:inline-block;
+    padding-left:100px;
+  }
+  .about .rating{
+    font-family: Montserrat, sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    color: #255493;
+    font-size: 74px;
+    text-decoration: none;
+    display:inline-block;
+    float: right;
+    padding-right: 100px;
+  }
+
+  .about .location {
+    font-family: Montserrat, sans-serif;
+    font-style: bold;
+    color: #255493;
+    font-weight: 400;
+    font-size: 37px;
+    padding-left:105px;
+  }
+
+  .about .description {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    font-size: 29px;
+    padding-left:100px;
+    padding:100px;
+  }
+
+  /* hotel cards */
+  .hotel-cards .hotel-title {
+    font-family: Montserrat, sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    color: #255493;
+    font-size: 42px;
+    text-decoration: none;
+    display:inline-block;
+    padding-left:100px;
+  }
+  .hotel-cards .see-all{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    color: #255493;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    display:inline-block;
+    float: right;
+    padding-right: 100px;
+  }
+
+  .hotel-cards .see-all:hover{
+    font-family: Montserrat, sans-serif;
+    font-style: regular;
+    color: #255493;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: underline;
+    display:inline-block;
+    float: right;
+    padding-right: 100px;
+    cursor: pointer;
+  }
+
+  .card-container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .card-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-container .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-shadow: 2px 2px #000;
+  }
+  
+  .card-container:hover .overlay {
+    height: 30%;
+  }
+  
+  .card-container .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }

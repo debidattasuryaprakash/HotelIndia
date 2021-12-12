@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #7FB4DB;
+    font-size: 25px;
+    text-decoration: none;
+    display:inline-block;
+    padding:40px;
+}
+.nav a:hover{
+    color: #053559;;
+}
+
+/* hotelbook section */
+
+.booking{
+    display: flex;
+}
+
+.column{
+    flex: 50%;
+    padding-left: 50px;
+}
+
+.column .title{
+    font-family: Montserrat, sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    color: #255493;
+    font-size: 67.09px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.column .subtitle{
+    font-family: Montserrat, sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    color: #255493;
+    font-size: 33.55px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.column .visitor{
+    font-family: Montserrat, sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    color: #255493;
+    font-size: 33.55px;
+    text-decoration: none;
+    display:inline-block;
+    padding-top: 30px;
+}
+
+.column .rating{
+    font-family: Montserrat, sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    color: #255493;
+    font-size: 33.55px;
+    text-decoration: none;
+    display:inline-block;
+    padding-top: 30px;
+    float: right;
+    padding-right: 40px;
+}
+
+.column .details{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #000000;
+    font-size: 25px;
+    text-decoration: none;
+    display:inline-block;
+    text-align: justify;
+    padding-top: 30px;
+    padding-right: 100px;
+}
+
+.column .button1{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    padding: 30px;
+    width: 90%;
+    height: 100px;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 25px;
+    text-decoration: none;
+    display:inline-block;
+    background-color: #255493;
+    border: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.column .button2{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    padding: 50px;
+    width: 90%;
+    height: 100px;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 25px;
+    text-decoration: none;
+    display:inline-block;
+    background-color: #255493;
+    border: #255493;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.room__cards{
+    padding-bottom: 50px;
+    padding-top: 100px;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+.room__cards h1{
+    font-family: Montserrat, sans-serif;
+    color: #255493;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.deluxe, .premium{
+    margin-top: 40px;
+    width: 40%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.315);
+    /* background: brown; */
+}
+.deluxe:hover, .premium:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.315);
+    transition: .3s all ease;
+}
+.deluxe img, .premium img{
+    width: 94%;
+    padding: 3% 0 3% 3%;
+}
+.deluxe .text__content, .premium .text__content {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 3%;
+}
+.deluxe .text__content p, .premium .text__content p{
+    font-family: Montserrat, sans-serif;
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 20px;
+}
+.deluxe .text__content button, .premium .text__content button{
+    font-family: Montserrat, sans-serif;
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+    background: #255493;
+    border: none;
+}
+@media(max-width: 900px) {
+    .room__cards{
+        flex-wrap: wrap;
+    }
+    .deluxe ,.premium{
+        width: 370px;
+    }
+}
